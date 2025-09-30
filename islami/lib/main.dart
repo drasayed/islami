@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
         
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Placeholder(),
-    );
+      home:  Container(decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assetName"))),
+    ));
   }
 }
 

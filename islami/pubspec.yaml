@@ -34,10 +34,13 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  flutter_svg: ^2.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    
+  
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -45,17 +48,51 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  build_runner:
+  flutter_gen_runner:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
-# The following section is specific to Flutter packages.
+# pubspec.yaml
+# ...
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  # line_length: 80 # Optional
+
+  # Optional
+  integrations:
+    image: true
+    flutter_svg: true
+    rive: true
+    lottie: true
+    fonts: true
+
+  # colors:
+  #   inputs:
+  #     - assets/color/colors.xml
+
 flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svg/
+
+  fonts:
+    - family: Janna
+      fonts:
+        - asset: assets/fonts/Janna LT Bold.ttf
+          weight: 700
+
+
+# The following section is specific to Flutter packages.
+# flutter:
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
-  uses-material-design: true
+  # uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
   # assets:
