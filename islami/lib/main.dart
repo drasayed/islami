@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/common/app_routes.dart';
-import 'package:islami/gen/assets.gen.dart';
 import 'package:islami/screens/splash_screens/first_splash_screen.dart';
+import 'package:islami/screens/splash_screens/second_splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 initialRoute: AppRoutes.firstSplashScreen,
       routes: {
-        AppRoutes.firstSplashScreen: (context) => const FirstSplashScreen()
+        AppRoutes.firstSplashScreen: (context) => const FirstSplashScreen(),
+        AppRoutes.secondSplashScreen: (context) =>const SecondSplashScreen()
       },
     
       

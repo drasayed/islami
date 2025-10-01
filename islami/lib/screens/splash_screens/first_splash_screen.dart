@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:islami/common/app_color.dart';
 import 'package:islami/gen/assets.gen.dart';
 
-class FirstSplashScreen extends StatelessWidget {
+class FirstSplashScreen extends StatefulWidget {
   const FirstSplashScreen({super.key});
 
+  @override
+  State<FirstSplashScreen> createState() => _FirstSplashScreenState();
+}
+
+class _FirstSplashScreenState extends State<FirstSplashScreen> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(Duration(seconds: 3)).then((value) {
+      Navigator.pu,
+    },)
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
