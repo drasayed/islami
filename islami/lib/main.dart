@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:islami/common/app_routes.dart';
+import 'package:islami/gen/assets.gen.dart';
+import 'package:islami/screens/splash_screens/first_splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +16,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Islami App',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+initialRoute: AppRoutes.firstSplashScreen,
+      routes: {
+        AppRoutes.firstSplashScreen: (context) => const FirstSplashScreen()
+      },
+    
+      
+      // theme: ThemeData(
         
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home:  Container(decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assetName"))),
-    ));
+      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      // ),
+      // home:  Container(decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assetName"))),
+    );
   }
 }
 

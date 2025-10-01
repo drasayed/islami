@@ -50,6 +50,10 @@ class $AssetsImagesGen {
   AssetGenImage get shape07 =>
       const AssetGenImage('assets/images/Shape-07.png');
 
+  /// File path: assets/images/Splash Screen.png
+  AssetGenImage get splashScreen =>
+      const AssetGenImage('assets/images/Splash Screen.png');
+
   /// File path: assets/images/background.png
   AssetGenImage get background =>
       const AssetGenImage('assets/images/background.png');
@@ -61,6 +65,10 @@ class $AssetsImagesGen {
   AssetGenImage get closeUpIslamicNewYearWithQuranBooks => const AssetGenImage(
     'assets/images/close-up-islamic-new-year-with-quran-books.jpg',
   );
+
+  /// File path: assets/images/islami_logo.png
+  AssetGenImage get islamiLogo =>
+      const AssetGenImage('assets/images/islami_logo.png');
 
   /// File path: assets/images/kabba.png
   AssetGenImage get kabba => const AssetGenImage('assets/images/kabba.png');
@@ -80,6 +88,10 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/reading.png
   AssetGenImage get reading => const AssetGenImage('assets/images/reading.png');
+
+  /// File path: assets/images/routegold.png
+  AssetGenImage get routegold =>
+      const AssetGenImage('assets/images/routegold.png');
 
   /// File path: assets/images/silhouette-woman-reading-quran.jpg
   AssetGenImage get silhouetteWomanReadingQuran =>
@@ -109,14 +121,17 @@ class $AssetsImagesGen {
     mosque02,
     shape04,
     shape07,
+    splashScreen,
     background,
     bearish,
     closeUpIslamicNewYearWithQuranBooks,
+    islamiLogo,
     kabba,
     moonLightShineThroughWindowIntoIslamicMosqueInterior,
     quranSura,
     radio,
     reading,
+    routegold,
     silhouetteWomanReadingQuran,
     tajMahalAgraIndia,
     verticalShotHassanIiMosqueCasablancaMorocco,
