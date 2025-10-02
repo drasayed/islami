@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/common/app_color.dart';
+import 'package:islami/common/app_routes.dart';
 import 'package:islami/gen/assets.gen.dart';
 
 class FirstSplashScreen extends StatefulWidget {
@@ -16,8 +17,8 @@ class _FirstSplashScreenState extends State<FirstSplashScreen> {
     // TODO: implement initState
     super.initState();
     Future.delayed(Duration(seconds: 3)).then((value) {
-      Navigator.pu,
-    },)
+      Navigator.pushReplacementNamed(context, AppRoutes.secondSplashScreen);
+    },);
   }
   @override
   Widget build(BuildContext context) {
