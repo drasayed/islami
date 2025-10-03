@@ -17,12 +17,6 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/Glow.png
-  AssetGenImage get glow => const AssetGenImage('assets/images/Glow.png');
-
-  /// File path: assets/images/Glow2.png
-  AssetGenImage get glow2 => const AssetGenImage('assets/images/Glow2.png');
-
   /// File path: assets/images/HadithCardBackGround.png
   AssetGenImage get hadithCardBackGround =>
       const AssetGenImage('assets/images/HadithCardBackGround.png');
@@ -53,10 +47,6 @@ class $AssetsImagesGen {
   /// File path: assets/images/Splash Screen.png
   AssetGenImage get splashScreen =>
       const AssetGenImage('assets/images/Splash Screen.png');
-
-  /// File path: assets/images/background.png
-  AssetGenImage get background =>
-      const AssetGenImage('assets/images/background.png');
 
   /// File path: assets/images/bearish.png
   AssetGenImage get bearish => const AssetGenImage('assets/images/bearish.png');
@@ -107,13 +97,19 @@ class $AssetsImagesGen {
         'assets/images/vertical-shot-hassan-ii-mosque-casablanca-morocco.jpg',
       );
 
+  /// File path: assets/images/welcom_intro.png
+  AssetGenImage get welcomIntro =>
+      const AssetGenImage('assets/images/welcom_intro.png');
+
   /// File path: assets/images/welcome.png
   AssetGenImage get welcome => const AssetGenImage('assets/images/welcome.png');
 
+  /// File path: assets/images/wellcom_header.png
+  AssetGenImage get wellcomHeader =>
+      const AssetGenImage('assets/images/wellcom_header.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
-    glow,
-    glow2,
     hadithCardBackGround,
     hadithCardBackGroundWhite,
     intro1,
@@ -122,7 +118,6 @@ class $AssetsImagesGen {
     shape04,
     shape07,
     splashScreen,
-    background,
     bearish,
     closeUpIslamicNewYearWithQuranBooks,
     islamiLogo,
@@ -135,7 +130,9 @@ class $AssetsImagesGen {
     silhouetteWomanReadingQuran,
     tajMahalAgraIndia,
     verticalShotHassanIiMosqueCasablancaMorocco,
+    welcomIntro,
     welcome,
+    wellcomHeader,
   ];
 }
 

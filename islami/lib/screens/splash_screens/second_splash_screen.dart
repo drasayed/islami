@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:islami/common/app_color.dart';
 import 'package:islami/common/app_routes.dart';
 import 'package:islami/gen/assets.gen.dart';
@@ -17,7 +16,7 @@ class _SecondSplashScreenState extends State<SecondSplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3)).then((value) {
-      Navigator.pushReplacementNamed(context, AppRoutes.mainScreen);
+      Navigator.pushReplacementNamed(context, AppRoutes.introScreen );
     },);
     
   }
